@@ -1,0 +1,2 @@
+module KoridorsHelper
+end

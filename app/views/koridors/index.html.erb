@@ -1,0 +1,10 @@
+<% provide(:title, 'Daftar Koridor') %>
+<h1>Daftar koridor</h1>
+
+<ul class="koridors">
+	<% @koridors.each do |koridor| %>
+		<li>
+			<%= link_to "Koridor #{koridor.name}", koridor %>
+		</li>
+	<% end %>
+</ul>

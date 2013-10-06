@@ -1,0 +1,12 @@
+<% provide(:title, "Koridor #{@koridor.name}") %>
+<div class="row">
+	<div class="span5">
+		<h1>Koridor <%= @koridor.name %></h1>
+	</div>
+	<div class="span7">
+		<h3>Halte</h3>
+		<ol class="haltes">
+			<%= render partial: 'shared/halte', collection: @haltes %>
+		</ol>
+	</div>
+</div>
