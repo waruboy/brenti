@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130926072854) do
+ActiveRecord::Schema.define(version: 20131006003359) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -19,6 +19,27 @@ ActiveRecord::Schema.define(version: 20130926072854) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "haltes", force: true do |t|
+    t.string   "kode"
+    t.string   "nama"
+    t.integer  "transfer_id"
+    t.integer  "koridor_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "haltes", ["koridor_id"], name: "index_haltes_on_koridor_id"
+  add_index "haltes", ["nama"], name: "index_haltes_on_nama"
+
+  create_table "koridors", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "koridors", ["name"], name: "index_koridors_on_name"
 
   create_table "place_categories", force: true do |t|
     t.integer  "place_id"
