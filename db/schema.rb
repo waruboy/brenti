@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20131006003359) do
     t.string   "nama"
     t.integer  "transfer_id"
     t.integer  "koridor_id"
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

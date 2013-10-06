@@ -5,6 +5,7 @@ class CreateHaltes < ActiveRecord::Migration
       t.string :nama
       t.integer :transfer_id
       t.integer :koridor_id
+      t.string  :description
 
       t.timestamps
     end

@@ -1,21 +1,21 @@
-kode,nama,transfer_id,koridor_id
-K1.01,Kota,,1
-K1.02,Glodok,,1
-K1.03,Olimo,,1
-K1.04,Mangga Besar,,1
-K1.05,Sawah Besar,,1
-K1.06,Harmoni Sentral,,1
-K1.07,Monumen Nasional,,1
-K1.08,Bank Indonesia,,1
-K1.09,Sarinah,,1
-K1.10,Bundaran HI,,1
-K1.11,Tosari ICBC,,1
-K1.12,Dukuh Atas 1,,1
-K1.13,Setiabudi,,1
-K1.14,Karet,,1
-K1.15,Bendungan Hilir,,1
-K1.16,Polda Metro Jaya,,1
-K1.17,Gelora Bung Karno,,1
-K1.18,Bundaran Senayan,,1
-K1.19,Masjid Agung,,1
-K1.20,Blok M,,1
+kode,nama,transfer_id,koridor_id,description
+K1.01,Kota,,1,
+K1.02,Glodok,,1,
+K1.03,Olimo,,1,
+K1.04,Mangga Besar,,1,
+K1.05,Sawah Besar,,1,
+K1.06,Harmoni Sentral,,1,
+K1.07,Monumen Nasional,,1,
+K1.08,Bank Indonesia,,1,
+K1.09,Sarinah,,1,
+K1.10,Bundaran HI,,1,
+K1.11,Tosari ICBC,,1,
+K1.12,Dukuh Atas 1,,1,
+K1.13,Setiabudi,,1,
+K1.14,Karet,,1,
+K1.15,Bendungan Hilir,,1,
+K1.16,Polda Metro Jaya,,1,
+K1.17,Gelora Bung Karno,,1,
+K1.18,Bundaran Senayan,,1,
+K1.19,Masjid Agung,,1,
+K1.20,Blok M,,1,
