@@ -12,6 +12,7 @@ describe Halte do
   it { should respond_to(:transfer_id) }
   it { should respond_to(:koridor_id) }
   it { should respond_to(:koridor) }
+  it { should respond_to(:places) }
 
   it { should be_valid }
 

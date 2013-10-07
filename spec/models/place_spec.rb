@@ -7,6 +7,7 @@ describe Place do
 	it { should respond_to(:name) }
 	it { should respond_to(:description) }
 	it { should respond_to(:categories) }
+	it { should respond_to(:haltes) }
 
 	it { should be_valid }
 

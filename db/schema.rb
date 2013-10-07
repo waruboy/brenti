@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131006003359) do
+ActiveRecord::Schema.define(version: 20131007234031) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -41,6 +41,18 @@ ActiveRecord::Schema.define(version: 20131006003359) do
   end
 
   add_index "koridors", ["name"], name: "index_koridors_on_name"
+
+  create_table "locations", force: true do |t|
+    t.integer  "place_id"
+    t.integer  "halte_id"
+    t.string   "remark"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "locations", ["halte_id"], name: "index_locations_on_halte_id"
+  add_index "locations", ["place_id", "halte_id"], name: "index_locations_on_place_id_and_halte_id", unique: true
+  add_index "locations", ["place_id"], name: "index_locations_on_place_id"
 
   create_table "place_categories", force: true do |t|
     t.integer  "place_id"
