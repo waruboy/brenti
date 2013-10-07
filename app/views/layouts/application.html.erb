@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title) %> - Brenti</title>
+  <title><%= yield(:title) %> - Brentimana</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -13,11 +13,12 @@
 	<header class="navbar navbar-fixed-top navbar-inverse">
 		<div class="navbar-inner">
 			<div class="container">
-				<%= link_to "Brenti!", '#', id: "logo" %>
+				<%= link_to "Brentimana", root_path, id: "logo" %>
 				<nav>
 					<ul class="nav pull-right">
 						<li><%= link_to "Depan",	root_path %></li>
 						<li><%= link_to "Petunjuk", help_path %></li>
+						<li><%= link_to "Koridor", koridors_path %></li>
 						<li><%= link_to "Kontak", contact_path %></li>
 					</ul>
 				</nav>
