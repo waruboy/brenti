@@ -1,0 +1,16 @@
+<% provide(:title, @place.name) %>
+<div class="row">
+	<div class="span5">
+		<h1><%= @place.name %></h1>
+	</div>
+	<div class="span7">
+		<h3>Halte Terdekat</h3>
+		<ol class="haltes">
+			<% @place.locations.each do |location| %>
+				<li id="location<%= location.id %>">
+					<%= link_to location.halte.nama, location.halte %>
+				</li>
+			<% end %>
+		</ol>
+	</div>
+</div>

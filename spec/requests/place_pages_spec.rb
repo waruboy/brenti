@@ -7,10 +7,10 @@ describe "PlacePages" do
 	let(:halte) { FactoryGirl.create(:halte, koridor: koridor) }
 	let(:destinasi) { FactoryGirl.create(:place) }
 
-	# describe "detail page" do
-	# 	before { visit place_path(destinasi) }
+	describe "detail page" do
+		before { visit place_path(destinasi) }
 
-	# 	it { should have_title(destinasi.name) }
-	# end
+		it { should have_title(destinasi.name) }
+	end
 
 end
