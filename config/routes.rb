@@ -8,6 +8,7 @@ Brenti::Application.routes.draw do
   get "static_pages/contact"
   resources :koridors
   resources :haltes
+  resources :places
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

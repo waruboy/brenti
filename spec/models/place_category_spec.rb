@@ -9,6 +9,7 @@ describe PlaceCategory do
 	it { should respond_to(:place) }
 	it { should respond_to(:category) }
 
+
 	it { should be_valid }
 
 	describe "when it doesn't have a place" do

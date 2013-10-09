@@ -12,13 +12,13 @@ describe Location do
   it { should respond_to(:place) }
   it { should be_valid }
 
-  describe "when no halte_id" do
-  	before { lokasi.halte_id = nil }
-  	it { should_not be_valid }
-  end
+  # describe "when no halte_id" do
+  # 	before { lokasi.halte_id = nil }
+  # 	it { should_not be_valid }
+  # end
 
-  describe "when no place_id" do
-  	before { lokasi.place_id = nil }
-  	it { should_not be_valid }
-  end
+  # describe "when no place_id" do
+  # 	before { lokasi.place_id = nil }
+  # 	it { should_not be_valid }
+  # end
 end
