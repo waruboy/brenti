@@ -1,4 +1,18 @@
 <% provide(:title, 'Depan') %>
 <div class="center hero-unit">
-<h1>Brentimana</h1>
-<h2>Cari halte TransJakarta terdekat!</h2>
+	<h1>Brentimana</h1>
+	<h2>Cari halte TransJakarta terdekat!</h2>
+</div>
+<div class="row-fluid">
+<h1> ATAU </h1>
+</div>
+<div class="row-fluid front-page">
+	<div class="span6">
+		<h4>Lihat destinasi sekitar</h4>
+	</div>
+	<div class="span6">
+		<h4>Tambah destinasi baru</h4>
+		<hr>
+		<%= link_to "tambah destinasi", new_place_path, { class: "btn btn-success" } %>
+	</div>
+</div>

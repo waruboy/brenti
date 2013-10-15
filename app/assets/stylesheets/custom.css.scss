@@ -1,5 +1,15 @@
 @import "bootstrap";
 
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box_sizing: border-box
+}
+
 /* universal */
 
 html {
@@ -71,7 +81,7 @@ p {
 }
 
 /* footer */
-footer {
+.footer {
 	margin-top: 45px;
 	padding-top: 5px;
 	border-top: 1px solid #eaeaea;
@@ -94,6 +104,29 @@ footer {
 		}
 	}
 }
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+	border: 1px, solid #bbb;
+	width: 100%;
+	margin-bottom: 15px;
+	@include box_sizing;
+}
+
+input {
+	height: auto !important;
+}
+
+/* front-page */
+.front-page{
+	text-align: center;
+	.btn {
+		font-size: 18px;
+		padding: 14px 24px;
+	}
+}
+
 
 /* Koridors index */
 

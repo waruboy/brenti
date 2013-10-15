@@ -1,0 +1,24 @@
+<% provide(:title, 'Destinasi baru') %>
+<h1>Destinasi baru</h1>
+
+<div class="row">
+	<div class="span6 offset3">
+		<%= form_for(@place) do |f| %>
+			<%= render 'shared/error_messages' %>
+
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+
+			<%= f.label :keterangan %>
+			<%= f.text_field :description %>
+
+			<%= f.label :halte %>
+			<%= collection_select "location", "halte_id", @haltes, :id, :nama, prompt: true %>
+		
+
+			<%= f.submit "Daftarkan destinasi", class: "btn btn-large btn-primary" %>
+
+		<% end %>
+
+	</div>
+</div>
