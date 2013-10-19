@@ -28,9 +28,10 @@ class PlacesController < ApplicationController
 		@location = Location.new(location_params)
 		@place.locations << @location
 		if @place.save
+			flash[:success] = "#{@place.name} berhasil didaftarkan"
+			redirect_to place_path(@place)
 		else
-			@haltes = Halte.all
-			render 'new'
+			redirect_to new_place_path
 		end
 	end
 

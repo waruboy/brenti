@@ -16,7 +16,7 @@
 			<%= collection_select "koridor", "koridor_id", @koridors, :id, :description, prompt: true %>
 
 			<%= f.label :halte %>
-			<%= collection_select "location", "halte_id", @haltes, :id, :nama, prompt: true %>
+			<%= collection_select "location", "halte_id", [], :id, :nama, prompt: true %>
 		
 
 			<%= f.submit "Daftarkan destinasi", class: "btn btn-large btn-primary" %>
