@@ -5,6 +5,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'gon', '~> 4.1.1'
+gem 'jquery-turbolinks'
 
 group :production do
 	gem 'pg', '0.15.1'

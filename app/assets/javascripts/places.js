@@ -1,4 +1,6 @@
-jQuery(function($){
+var ready;
+
+ready = function($){
 	var haltes = gon.haltes;
 	var $haltes_id = $('#location_halte_id');
 	$('#koridor_koridor_id').change(function(){
@@ -8,6 +10,8 @@ jQuery(function($){
 			return '<option value="' + halte_id + '">' + gon.haltes_name[halte_id] + '</option>'
 		}).join('');
 		$haltes_id.html(html)
-	})
-});
+	});
+};
 
+$(document).ready(ready);
+$(document).on('page:load', ready)
