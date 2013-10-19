@@ -7,6 +7,7 @@ class PlacesController < ApplicationController
 		@place = Place.new
 		@location = Location.new
 		@haltes = Halte.all
+		@koridors = Koridor.all
 	end
 
 	def create

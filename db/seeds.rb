@@ -1,6 +1,11 @@
 require 'csv'
 
 
+koridors_file = "db/seeds/koridors.csv"
+CSV.foreach(koridors_file, headers: true) do |row|
+	Koridor.create!(row.to_hash)
+end
+
 (1..12).each do |i|
 	filename = "db/seeds/kor#{i}.csv"
 
@@ -9,6 +14,3 @@ require 'csv'
 	end
 end
 
-(1..12).each do |kor|
-	Koridor.create!(name: "#{kor}")
-end
