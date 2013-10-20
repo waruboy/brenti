@@ -23,8 +23,11 @@ class PlacesController < ApplicationController
 	end
 
 	def index
-		place = Place.search(params[:search_place]).first
-		redirect_to place_path(place)
+		@places = Place.search(params[:search_place])
+		if @places.count == 1
+			place = @places.first
+			redirect_to place_path(place)
+		end
 	end
 
 
