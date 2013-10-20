@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
+	include HaltesHelper
   def home
-  	haltes = Halte.all.collect(&:nama)
-  	gon.haltes = haltes
+  	gon_collect_haltes_name
   end
 
   def help

@@ -13,7 +13,7 @@
 		Nama halte:
 		<%= form_tag haltes_path, method: 'get' do %>
 			<p>
-				<%= text_field_tag :search_halte, params[:search] %>
+				<%= render 'shared/halte_autocomplete' %>
 				<%= submit_tag "Lihat", name: nil %>
 			</p>
 		<% end %>

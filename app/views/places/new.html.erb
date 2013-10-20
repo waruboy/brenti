@@ -12,12 +12,9 @@
 			<%= f.label :keterangan %>
 			<%= f.text_field :description %>
 
-			<%= f.label :koridor %>
-			<%= collection_select "koridor", "koridor_id", @koridors, :id, :description, prompt: true %>
-
 			<%= f.label :halte %>
-			<%= collection_select "location", "halte_id", [], :id, :nama, prompt: true %>
-		
+			<%= render 'shared/halte_autocomplete' %>
+			
 
 			<%= f.submit "Daftarkan destinasi", class: "btn btn-large btn-primary" %>
 
