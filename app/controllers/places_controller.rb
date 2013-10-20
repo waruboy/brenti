@@ -22,6 +22,11 @@ class PlacesController < ApplicationController
 		end
 	end
 
+	def index
+		place = Place.search(params[:search_place]).first
+		redirect_to place_path(place)
+	end
+
 
 
 	private

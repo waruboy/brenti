@@ -1,7 +1,13 @@
 <% provide(:title, 'Depan') %>
 <div class="center hero-unit">
 	<h1>Brentimana</h1>
-	<h2>Cari halte TransJakarta terdekat!</h2>
+	<h2>Cari halte TransJakarta terdekat dari tujuan Anda:</h2>
+	<%= form_tag places_path, method: 'get' do %>
+		<p>
+			<%= text_field_tag :search_place, params[:search_place] %>
+			<%= submit_tag "Cari halte terdekat", name: nil, class: "btn btn-primary btn-large" %>
+		</p>
+	<% end %>
 </div>
 <div class="row-fluid">
 <h1> ATAU </h1>
@@ -14,7 +20,7 @@
 		<%= form_tag haltes_path, method: 'get' do %>
 			<p>
 				<%= render 'shared/halte_autocomplete' %>
-				<%= submit_tag "Lihat", name: nil %>
+				<%= submit_tag "Lihat", name: nil, class: "btn btn-primary btn-large" %>
 			</p>
 		<% end %>
 

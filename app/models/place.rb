@@ -9,4 +9,12 @@ class Place < ActiveRecord::Base
 	def add_halte!(halte)
 		locations.create!(halte_id: halte.id)
 	end
+
+	def self.search(search)
+		if search
+			find(:all, conditions: ['name LIKE ?', "%#{search}%"])
+		else
+			find(:all)
+		end
+	end
 end
