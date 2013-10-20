@@ -6,7 +6,7 @@ class HaltesController < ApplicationController
 	end
 
 	def index
-		halte = Halte.search(params[:search]).first
+		halte = Halte.search(params[:search_halte]).first
 		redirect_to halte_path(halte)
 	end
 end
