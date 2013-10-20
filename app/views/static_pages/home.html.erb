@@ -10,6 +10,14 @@
 	<div class="span6">
 		<h4>Lihat destinasi sekitar</h4>
 
+		Nama halte:
+		<%= form_tag haltes_path, method: 'get' do %>
+			<p>
+				<%= text_field_tag :search, params[:search] %>
+				<%= submit_tag "Lihat", name: nil %>
+			</p>
+		<% end %>
+
 	</div>
 	<div class="span6" data-no-turbolink>
 		<h4>Tambah destinasi baru</h4>
