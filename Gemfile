@@ -5,6 +5,8 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'gon', '~> 4.1.1'
+gem 'turbolinks', '1.3.0'
+gem 'jquery-turbolinks', '2.0.1'
 
 
 group :production do
