@@ -26,11 +26,11 @@ describe "PlacePages" do
 		# describe "with valid information" do
 		# 	before do
 		# 		fill_in "Name", 	with: "Pasar Festival"
-		# 		select "Gor Sumantri", from: "location[halte_id]"
+		# 		# select "Gor Sumantri", from: "location[halte_id]"
 		# 	end
 		# 	it "should create a place" do
 		# 		expect { click_button submit }.to change(Place, :count).by(1)
 		# 	end
-		# end
+		end
 	end
 end
