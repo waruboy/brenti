@@ -1,10 +1,29 @@
 <% provide(:title, 'Daftar Koridor') %>
-<h1>Daftar koridor</h1>
 
-<ul class="koridors">
-	<% @koridors.each do |koridor| %>
-		<li>
-			<%= link_to "Koridor #{koridor.name}", koridor %>
-		</li>
-	<% end %>
-</ul>
+
+
+
+<div class="row">
+	<div class="span5">
+		<h3>Daftar koridor</h3>
+		<ul class="koridors">
+			<% @koridors.each do |koridor| %>
+				<li>
+					<%= link_to "Koridor #{koridor.name}", koridors_path + "#kor_#{koridor.name}" %>
+				</li>
+			<% end %>
+		</ul>
+	</div>
+	<div class="span7">
+
+		<% @koridors.each do |koridor| %>
+		<div id = <%= "kor_" + koridor.name %>
+			<h4> Halte <%= koridor.description %> </h4>
+			<ol class="haltes">
+				<%= render partial: 'shared/halte', collection: koridor.halte %>
+			</ol>
+		</div>
+		<% end %>
+		
+	</div>
+</div>

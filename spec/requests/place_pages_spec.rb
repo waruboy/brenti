@@ -30,7 +30,7 @@ describe "PlacePages" do
 		# 	end
 		# 	it "should create a place" do
 		# 		expect { click_button submit }.to change(Place, :count).by(1)
-		# 	end
-		end
+		#  	end
+		# end
 	end
 end
