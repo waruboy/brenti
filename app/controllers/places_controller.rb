@@ -12,7 +12,7 @@ class PlacesController < ApplicationController
 	def create
 		@place = Place.new(place_params)
 		halte = Halte.search(params[:search_halte]).first
-		@location = Location.new(halte: halte)
+		@location = Location.new(halte: halte, remark: params[:location_remark])
 		@place.locations << @location
 		if @place.save
 			flash[:success] = "#{@place.name} berhasil didaftarkan"

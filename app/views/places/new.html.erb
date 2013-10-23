@@ -9,14 +9,17 @@
 			<%= f.label :name %>
 			<%= f.text_field :name %>
 
-			<%= f.label :keterangan %>
+			<%= f.label :keterangan_tempat %>
 			<%= f.text_field :description %>
 
 			<%= f.label :halte %>
 			<%= render 'shared/halte_autocomplete' %>
-			
+
+			<%= f.label :keterangan_lokasi %>
+			<%= text_field_tag :location_remark, params[:location_remark] %>
 
 			<%= f.submit "Daftarkan destinasi", class: "btn btn-large btn-primary" %>
+
 
 		<% end %>
 
